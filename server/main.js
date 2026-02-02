@@ -1,6 +1,7 @@
 import { Meteor } from "meteor/meteor";
 import { LinksCollection } from "/imports/api/links";
 import { Random } from "meteor/random";
+import fetch from 'node-fetch';
 
 async function insertLink({ title, url }) {
   await LinksCollection.insertAsync({ title, url, createdAt: new Date() });
@@ -45,6 +46,11 @@ Meteor.startup(async () => {
   Meteor.publish("links", function () {
     return LinksCollection.find();
   });
+
+  // example of server-side fetch usage
+  const response = await fetch('https://www.githubstatus.com/api/v2/summary.json');
+  const data = await response.json();
+  console.log('GitHub status:', data.status.description);
 });
 
 Meteor.methods({
