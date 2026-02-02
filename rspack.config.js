@@ -11,5 +11,15 @@ const { defineConfig } = require('@meteorjs/rspack');
  * Use these flags to adjust your build settings based on environment.
  */
 module.exports = defineConfig(Meteor => {
-  return {};
+  return {
+    module: {
+      rules:[
+        {
+          test: /\.svg$/i,
+          issuer: /\.[jt]sx?$/,
+          use: ['@svgr/webpack'],
+        },
+      ],
+    },
+  };
 });

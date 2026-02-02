@@ -4,9 +4,12 @@ import { NavLink } from "react-router";
 export const About = () => {
   const { about } = useLoaderData();
   return (
-    <div>
+    <div className="about-page">
       <NavLink to="/">Home</NavLink>
-      <h2>About This Application</h2>
+      <div className="section">
+        <h2>About This Application</h2>
+        <NavLink to="/about">Reload this page</NavLink>
+      </div>
       <p>{about}</p>
     </div>
   );
