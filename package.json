@@ -17,6 +17,7 @@
     "react-router": "^7.10.1"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@meteorjs/rspack": "^1.0.0",
     "@rsdoctor/rspack-plugin": "^1.2.3",
     "@rspack/cli": "^1.7.1",
@@ -25,6 +26,8 @@
     "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4.1.12",
     "@types/meteor": "^2.9.7",
+    "eslint": "^10.0.2",
+    "globals": "^17.3.0",
     "postcss": "^8.5.6",
     "postcss-loader": "^8.1.1",
     "react-refresh": "^0.17.0",
