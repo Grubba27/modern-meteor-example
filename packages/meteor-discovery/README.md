@@ -56,6 +56,5 @@ Meteor.methods({
 - [] One method for both description and validation (`this.onInvocation("description").expects(type).returns({type})` or something like that)
 - [] Build time documentation generation
 - [] Support for custom validators
-- [] custom endpoint for discovery page and custom formats (e.g. OpenAPI)
-- [] custom collection name
-- [] Custom AI
+- [] Custom endpoint for discovery page and custom formats (e.g. OpenAPI)
+- [] Custom collection name
