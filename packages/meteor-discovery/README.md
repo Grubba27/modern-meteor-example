@@ -57,4 +57,5 @@ Meteor.methods({
 - [] Build time documentation generation
 - [] Support for custom validators
 - [] custom endpoint for discovery page and custom formats (e.g. OpenAPI)
+- [] custom collection name
 - [] Custom AI
