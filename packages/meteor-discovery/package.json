@@ -1,0 +1,15 @@
+{
+  "name": "meteor-discovery",
+  "version": "1.0.0",
+  "description": "Add a way to discover and validate your methods in meteor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Grubba27/modern-meteor-example/packages/meteor-discovery"
+  },
+  "author": "Grubba27",
+  "license": "MIT"
+}
