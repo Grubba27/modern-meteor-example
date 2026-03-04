@@ -78,7 +78,7 @@ function validate({ schema, validator }) {
 }
 
 export async function createDiscoveryPage(
-  { validator } = { validator: args => true }
+  { validator } = { validator: () => true }
 ) {
   await DiscoveryCollection.removeAsync({});
 
@@ -96,7 +96,7 @@ export async function createDiscoveryPage(
     };
   });
 
-  WebApp.connectHandlers.use("/discovery", async (req, res, next) => {
+  WebApp.connectHandlers.use("/discovery", async (req, res) => {
     Object.keys(Meteor.server.method_handlers).reduce((acc, methodName) => {
       const originalHandler = Meteor.server.method_handlers[methodName];
       try {
